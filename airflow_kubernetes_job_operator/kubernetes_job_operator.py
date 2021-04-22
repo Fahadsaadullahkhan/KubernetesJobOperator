@@ -1,7 +1,7 @@
 import jinja2
 from typing import List, Union
 from airflow.utils.decorators import apply_defaults
-from airflow.operators import BaseOperator
+from airflow.models.baseoperator import BaseOperator
 from airflow_kubernetes_job_operator.kube_api import KubeResourceState
 from airflow_kubernetes_job_operator.utils import (
     to_kubernetes_valid_name,
